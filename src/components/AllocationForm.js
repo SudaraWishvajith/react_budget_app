@@ -1,7 +1,7 @@
 import React, { useState, useContext }  from 'react';
 import { AppContext } from '../context/AppContext';
 
-const AllocationForm = ()=>{
+const AllocationForm = (props)=>{
     const { dispatch, remaining } = useContext(AppContext);
 
     const [name, setName] = useState('');

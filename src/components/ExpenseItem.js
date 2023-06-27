@@ -13,9 +13,14 @@ const ExpenseItem = (props)=>{
     };
 
     const increaseAllocation = (name)=>{
+        const expense = {
+            name: name,
+            cost: 10
+        }
+
         dispatch({
-            type:name,
-            cost:10, 
+            type:'ADD_EXPENSE',
+            payload: expense, 
         });
     }
 
